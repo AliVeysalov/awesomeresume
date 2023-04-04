@@ -16,15 +16,23 @@ import java.util.HashMap;
 public class Main {
 
     public static void main(String[] args) {
-        HashMap<Teacher, Student> students = new HashMap<>();
-        Teacher teacher = new Teacher(1, "Sarkhan", "Rasullu");
-        Teacher teacher2 = new Teacher(2, "Sarkhan2", "Rasullu2");
-        students.put(teacher, new Student(1, "Eldar", "Novruzov"));
-        students.put(teacher, new Student(2, "Azay", "Jalil"));
+        HashMap<String, Integer> students = new HashMap<>();
+        String s1 = "FB";
+        String s2 = "Ea";
+        System.out.println(s1.hashCode() + " " + s2.hashCode());
+        students.put(s1, 1);
+        students.put(s2, 2);
 
-        System.out.println("get is called");
-        students.get(teacher);
+//        HashMap<Teacher, Student> students = new HashMap<>();
+//        Teacher teacher = new Teacher(1, "Sarkhan", "Rasullu");
+//        Teacher teacher2 = new Teacher(2, "Sarkhan2", "Rasullu2");
+//        students.put(teacher, new Student(1, "Eldar", "Novruzov"));
+//        students.put(teacher, new Student(2, "Azay", "Jalil"));
+//
+//        System.out.println("get is called");
+//        students.get(teacher2);
     }
+
 //       public static void main(String[] args) {
 //          Map<Integer,String> students= new HashMap<>();
 //        students.put(1 ,"Azay");
